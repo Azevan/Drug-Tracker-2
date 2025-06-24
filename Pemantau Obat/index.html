@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemantau Penggunaan Obat</title>
+</head>
+<body>
+    <main>
+        <div id="login-page" class="form-container">
+            <h2>Masuk</h2>
+            <form>
+                <div class="i-group">
+                    <label for="login-mail">Masukkan Email</label>
+                    <input type="email" id="login-mail" required> 
+                </div>
+                <div class="i-group">
+                    <label for="login-pass">Masukkan Password</label>
+                    <input type="password" id="login-pass" required> 
+                </div>
+                <button type="submit">Masuk</button>
+            </form>
+            <p>Tidak punya akun? <a href="#" id="show-sign">Buat Akun</a></p>
+        </div>
+
+        <div id="sign-page" class="form-container" style="display: none;"> 
+            <h2>Buat Akun</h2>
+            <form>
+                <div class="i-group">
+                    <label for="sign-mail">Masukkan Email</label>
+                    <input type="email" id="sign-mail" required> 
+                </div>
+                <div class="i-group">
+                    <label for="sign-pass">Masukkan Password</label>
+                    <input type="password" id="sign-pass" required> 
+                </div>
+                <button type="submit">Buat Akun</button>
+            </form>
+            <p>Sudah punya akun? <a href="#" id="show-login">Masuk</a></p>
+        </div>
+    </main>
+    <script type="module" src="./auth.js"></script>
+</body>
+</html>

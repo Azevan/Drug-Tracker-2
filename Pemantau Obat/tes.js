@@ -1,0 +1,1 @@
+console.log("SUCCESS: File tes.js berhasil dimuat!");

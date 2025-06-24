@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Pemantau Penggunaan Obat</title>
+</head>
+<body>
+
+    <header class="dashboard-h">
+        <h1>Obat Saya</h1>
+        <nav>
+            <span id="u-email-dis">a@b.com</span>
+            <button id="exit-button">Keluar</button>
+        </nav>
+    </header>
+    <div id="pengingat-container" class="pengingat-container">
+        <!--Pengingat muncul disini!-->
+    </div>
+    <main class="dashboard-m">
+        <section class="crd">
+            <h2>Tambah Obat Baru</h2>
+            <form id="tambah-obat-f">
+                <div class="grup-input">
+                    <label for="namaobat">Nama Obat</label>
+                    <input type="text" id="namaobat" placeholder="Contoh: Nexium" required>
+                </div>
+
+                <div class="grup-input">
+                    <label for="instruksidosis">Instruksi Dosis</label>
+                    <input type="text" id="instruksidosis" placeholder="Contoh: tiga kali sehari" required>
+                </div>
+
+                <div class="fo-row">
+                    <div class="grup-input">
+                        <label for="jumlahawal">Jumlah Total</label>
+                        <input type="number" id="jumlahawal" placeholder="Contoh: 20" required>
+                    </div>
+                    <div class="grup-input">
+                        <label for="jumlahdosis">Besaran Dosis</label>
+                        <input type="number" id="jumlahdosis" placeholder="Contoh: 5" required>
+                    </div>
+                    <div class="grup-input">
+                        <label for="uyd">Unit Yang Dipakai</label>
+                        <select id="uyd" required>
+                            <option value="pil">Pil</option>
+                            <option value="volume">ml</option>
+                            <option value="sendokmakan">sdm</option>
+                            <option value="berat">mg</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit">Tambah Obat</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Stok Obat</h2>
+            <div id="daftar-obat">
+                <div class="objek-obat">   
+                    <div class="info-obat">
+                        <h3>Nexium <small>(1 Pil per konsumsi)</small></h3>
+                        <p>Sisa: <strong>26 dari 30 pil</strong></p>
+                    </div>
+                    <div class="kerja-obat">
+                        <button class="tombol-catatan">Catatan Pemakaian</button>
+                        <button class="tombol-hapus">Hapus</button>
+                    </div>
+                </div>
+                <div class="objek-obat">
+                    <div class="info-obat">
+                        <h3>Parasetamol Cair <small>(4 ml per konsumsi)</small></h3>
+                        <p>Sisa: <strong>140 dari 150 ml</strong></p>
+                    </div>
+                    <div class="kerja-obat">
+                        <button class="tombol-catatan">Catatan Pemakaian</button>
+                        <button class="tombol-hapus">Hapus</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="./dashboard.js"></script>
+</body>
+</html>
